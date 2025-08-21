@@ -1,0 +1,190 @@
+/* ------------------------------
+   ESTÉTICA FORTNITE ACTUALIZADA
+------------------------------ */
+
+/* Importar tipografías estilo Fortnite */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* FONDO GLOBAL */
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("https://wallpapers.com/images/hd/fortnite-battle-royale-4k-z4b6ue0knxbfzwbt.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #f0f0f0;
+  line-height: 1.6;
+  position: relative;
+  z-index: 0;
+}
+
+/* Overlay oscuro para mejorar la lectura */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+/* NAVBAR con neón gamer */
+.navbar {
+  background: linear-gradient(90deg, #6e0dd0, #1a94ff);
+  border-bottom: 3px solid #00f7ff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+.navbar-brand {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #00f7ff;
+}
+.navbar-nav .nav-link {
+  font-family: "Poppins", sans-serif;
+  color: #f0f0f0 !important;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #00f7ff !important;
+  text-shadow: 0 0 6px #00f7ff;
+}
+
+/* TIPOGRAFÍA PRINCIPAL */
+h1, h2, h5 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px #000;
+}
+.lead {
+  font-family: "Poppins", sans-serif;
+  color: #dff6ff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+}
+
+/* BOTONES al estilo Fortnite */
+.btn-primary {
+  background: linear-gradient(90deg, #6e0dd0, #1a94ff);
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #1a94ff, #00f7ff);
+  color: #000;
+  box-shadow: 0 0 20px #00f7ff;
+}
+.btn-secondary {
+  background: #2a2a2a;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background: #444;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* SECCIONES «Modos de juego» a «Contacto» con nuevo fondo */
+.album,
+.carousel,
+form,
+#contacto {
+  background-image: url("https://wallpapers.com/images/hd/fortnite-chapter2-team-advancing-towards-structure-yn6maxj56t7g7vpz.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  padding: 60px 0;
+  border: 2px solid #6e0dd0;
+  box-shadow: 0 0 25px rgba(0,0,0,0.6);
+  position: relative;
+  overflow: hidden;
+}
+.album::before,
+.carousel::before,
+form::before,
+#contacto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 30, 0.7);
+  z-index: 0;
+}
+.album > *, 
+.carousel > *, 
+form > *, 
+#contacto > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ESTILO DE TARJETAS en album */
+.card {
+  background: rgba(30, 30, 50, 0.85);
+  border: 2px solid #6e0dd0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00f7ff;
+}
+.card-title {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+.card-text {
+  font-family: "Poppins", sans-serif;
+  color: #cfdfff;
+}
+
+/* CARRUSEL estilizado */
+.carousel {
+  border: 2px solid #00f7ff;
+  border-radius: 16px;
+}
+.carousel .lead {
+  font-style: italic;
+  color: #ffffff;
+}
+.blockquote-footer {
+  font-family: "Orbitron", sans-serif;
+  color: #6e0dd0;
+  font-weight: bold;
+}
+
+/* FORMULARIO personalizado */
+form .form-label {
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+.form-control {
+  background: #222;
+  border: 1px solid #6e0dd0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+.form-control:focus {
+  border-color: #00f7ff;
+  box-shadow: 0 0 12px #00f7ff;
+}
+
+/* FOOTER con gradiente neón */
+footer {
+  background: linear-gradient(90deg, #6e0dd0, #1a94ff);
+  border-top: 3px solid #00f7ff;
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  color: #fff;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
